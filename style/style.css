@@ -208,7 +208,7 @@
     position: top center;
 }
 /* ----------------
-   Facts style
+   Some Facts style
 ----------------- */
 .facts-title{
     color:var(--black);
@@ -230,6 +230,10 @@
     border: 1px solid var(--orange);
     text-align: center;
     padding: 10px 12px;
+    transition: transform 2s;
+}
+.fact-topic:hover{
+    transform: rotateZ(20deg);
 }
 /* ----------------
     Sponsor style
