@@ -53,7 +53,8 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 0.75rem;
 }
 
 nav ul li {
@@ -98,6 +99,58 @@ nav a {
     margin-bottom: 10px; 
 }
 
+
+/* responsive style  */
+@media screen and (max-width:776px){
+    /* responsive header */
+    header{
+        padding: 20px 30px ;
+    }    
+
+    /* responsive nav */
+    nav {
+        flex-direction: column;
+    }
+    .nav-title {        
+        font-size: 1.75rem;      
+    }
+    nav ul {        
+        gap: 0.4rem;
+    }
+    nav a {        
+        font-size: 1rem;        
+        line-height: 1rem;
+        
+    }
+
+    /* responsive banner  */
+    .banner{
+        margin-top: 20px;
+    }
+    .banner-content {                        
+        margin-bottom: 10px;
+    }
+    
+    .banner-title {        
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2rem;       
+    }
+    
+    .banner-description {        
+        font-size: 1rem;
+        margin: 10px 0px; 
+    }
+
+    /* responsive common style */
+    .btn-orange {        
+        font-size: 0.90rem;
+        font-weight: 400;
+        line-height: 1rem;        
+        padding: 6px 10px;        
+    }
+
+}
 /* nav style */
 /* 
 nav,  .banner {
