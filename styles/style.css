@@ -299,11 +299,11 @@ main {
 }
 
 .facts-item-description {
-    color: rgb(114, 114, 114);    
+    color: rgb(114, 114, 114);
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
-    letter-spacing: 0%;    
+    letter-spacing: 0%;
 }
 
 /* support style */
@@ -325,10 +325,12 @@ main {
 
 .support-description {
     color: rgb(114, 114, 114);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .support-sponsor {
@@ -483,6 +485,15 @@ footer {
 
     .facts div {
         width: 80%;
+    }
+
+    /*------------------------
+        responsive sponsor 
+    -----------------------*/
+    .support-sponsor { 
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
 }
