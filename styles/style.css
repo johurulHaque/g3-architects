@@ -122,41 +122,72 @@ nav a {
 /* main style  */
 main {
     max-width: 1600px;
-    margin: 0 auto;    
+    margin: 0 auto;
     padding: 20px 0px;
 }
 
-/* feature style */
-.feature-container {
+/* team style */
+.team-container {
     display: flex;
     align-items: center;
     padding-left: 20px;
     padding-right: 100px;
 }
 
-.feature-container div {
+.team-container div {
     flex: 1;
 }
 
-.feature-img {
+.team-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
 }
 
-.feature-img div {
+.team-img div {
     width: 100%;
 }
 
-.feature-img>div>img {
+.team-img>div>img {
     width: 100%;
 }
 
-.feature-content {
+.team-content {
     padding: 0 30px;
 }
 
-.feature-title {}
+.team-title {}
+
+.team-description {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* feature style */
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.feature,
+.feature-experience {
+    flex: 1;
+}
+
+.feature-title {
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: left;
+}
 
 .feature-description {
     color: rgb(114, 114, 114);
@@ -166,6 +197,60 @@ main {
     letter-spacing: 0%;
     text-align: left;
 }
+
+.feature-item-container {
+    padding: 0 30px;
+}
+
+.feature-item {
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    width: 60%;
+}
+
+
+.item-title {
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.item-description {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.feature-experience {
+    padding-left: 50px;
+}
+
+.feature-experience img {
+    height: 70%;
+}
+
+.experience-badge {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    width: 200px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 70px;
+    left: -50px;
+}
+
+
 
 
 /*----------------------------- 
@@ -229,33 +314,65 @@ main {
 
 
     /*------------------------
-        responsive feature 
+        responsive team 
     -----------------------*/
-    .feature-container {        
+    .team-container {
         flex-direction: column-reverse;
         padding: 0 10px;
     }
 
-    .feature-container > div {        
+    .team-container>div {
         width: 100%;
     }
 
-    .feature-img {
+    .team-img {
         grid-template-columns: 1fr;
         gap: 0.5rem;
     }
 
-    .feature-img div {
+    .team-img div {
         width: 100%;
-    }  
+    }
 
-    .feature-content {
+    .team-content {
         padding: 0 30px;
         text-align: center;
+    }
+
+    .team-description {
+        margin-bottom: 10px;
+    }
+
+    /*------------------------
+        responsive feature 
+    -----------------------*/
+    .feature-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .feature,
+    .feature-experience {
+        max-width: 90%;
     }    
 
-    .feature-description {                
-        margin-bottom: 10px;
+    .feature-item {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .feature-experience img {
+        max-width: 90%;
+        padding-left: 10px;
+    }
+
+    .experience-badge {       
+        width: 150px;
+        padding: 10px;
+        position: relative;
+        bottom: 50px;
+        left: -50px;
     }
 
 
@@ -314,7 +431,7 @@ main {
     }
 
     /*------------------------
-        responsive feature 
+        responsive team 
     -----------------------*/
-    
+
 }
