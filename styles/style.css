@@ -261,13 +261,13 @@ main {
     margin-bottom: 10px;
 }
 
-.facts div {
+.facts-card {
     box-sizing: border-box;
     border: 1px solid rgb(255, 144, 14);
     border-radius: 8px;
-    padding: 20px;
+    padding:30px;
     text-align: center;
-    width: 300px;
+    /* width: 300px; */
 }
 
 .fact-title {
@@ -289,7 +289,7 @@ main {
 }
 
 
-.facts-item-title {
+.card-stats {
     color: rgb(66, 66, 66);
     font-size: 45px;
     font-weight: 600;
@@ -298,7 +298,7 @@ main {
     margin: 5px 0px;
 }
 
-.facts-item-description {
+.card-title {
     color: rgb(114, 114, 114);
     font-size: 20px;
     font-weight: 600;
@@ -308,7 +308,7 @@ main {
 
 /* support style */
 .support-container {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .support-content {
@@ -335,8 +335,13 @@ main {
 
 .support-sponsor {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.support-sponsor img {
+    width: 165px;
+
 }
 
 /* footer style */
@@ -487,10 +492,10 @@ footer {
     .facts {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 10px;        
     }
 
-    .facts div {
+    .facts-card {
         width: 80%;
     }
 
@@ -500,6 +505,7 @@ footer {
     .support-sponsor {
         flex-direction: column;
         align-items: center;
+        /* text-align: center; */
         gap: 20px;
     }
 
