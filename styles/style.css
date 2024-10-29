@@ -76,7 +76,7 @@ nav a {
     margin-top: 50px;
 }
 .banner-content {
-    max-width: 600px;
+    max-width: 900px;
     margin:0 auto;
     letter-spacing: 0%;
     text-align: center;
@@ -85,23 +85,24 @@ nav a {
 
 .banner-title {
     color: rgb(19, 19, 19);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 70px;
+    margin-bottom: 20px;
    
 }
 
 .banner-description {
     color: rgb(114, 114, 114);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 26px;   
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 
 
 /* responsive style  */
-@media screen and (max-width:776px){
+@media screen and (max-width:767px){
     /* responsive header */
     header{
         padding: 20px 30px ;
@@ -149,41 +150,50 @@ nav a {
         line-height: 1rem;        
         padding: 6px 10px;        
     }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    /* responsive header */
+    header{
+        padding: 25px 60px ;        
+    }    
 
-}
-/* nav style */
-/* 
-nav,  .banner {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
+    /* responsive nav */
+    nav {
+        flex-direction: column;
+    }
+    .nav-title {        
+        font-size: 2rem;      
+    }
+    nav ul {        
+        gap: 1rem;
+    }
+    nav a {        
+        font-size: 1.4rem;        
+        line-height: 1.4rem;        
+    }
 
-}
-nav ul {
-    display: flex;
-    gap: 10px;
-}
-nav ul li{
-    list-style-type: none;
-}
-nav a {
-    text-decoration: none;    
-    color: rgb(66, 66, 66);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0%;
-    text-align: center;
-}
-nav h2 {
-    color: rgb(19, 19, 19);    
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 53px;
-    letter-spacing: 0%;
-    text-align: center;
+    /* responsive banner  */
+    .banner{
+        margin-top: 30px;
+    }
+    .banner-content {                        
+        margin-bottom: 10px;
+    }
+    
+    .banner-title {        
+        font-size: 2.5rem;        
+        line-height: 2.5rem;       
+    }
+    
+    .banner-description {        
+        font-size: 1.3rem;
+        margin: 10px 0px; 
+    }
+
+    /* responsive common style */
+    .btn-orange {        
+        font-size: 1rem;        
+        padding: 6px 10px;        
+    }
+
 }
